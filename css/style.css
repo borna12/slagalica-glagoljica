@@ -36,7 +36,14 @@ a:hover {
 	border: 2em solid #F0F0F0;
 	border-radius: 4px;
 	box-shadow: 0px 0px 10px #888888;
-	background: rgba(158, 158, 158, 0.5)
+}
+.bilo {
+	background: rgba(256, 256, 256, 0.6);
+	/*transition: 1s;*/
+}
+.crveno {
+	background: rgba(244, 67, 54, 0.6);
+	/*transition: 1s;*/
 }
 .board2 {
 	font-size: 1vmin;
@@ -61,6 +68,11 @@ a:hover {
 	height: 23.333333333em;
 	-webkit-transition: top .5s, left .5s;
 	transition: top .5s, left .5s;
+}
+.polja {
+	position: absolute;
+	width: 23.333333333em;
+	height: 23.333333333em;
 }
 [class^=peice]::after {
 	content: '';
@@ -98,6 +110,45 @@ a:hover {
 .peice-h::after {
 	background-position: bottom center;
 }
+.prvi {
+	background: rgba(256, 256, 256, 0.5);
+}
+.drugi {
+	left: 23.333333333em;
+	background: rgba(254, 0, 0, 0.5);
+}
+.treci {
+	left: 46.666666667em;
+	background: rgba(256, 256, 256, 0.5);
+}
+.cetvrti {
+	top: 23.333333333em;
+	background: rgba(254, 0, 0, 0.5);
+}
+.peti {
+	left: 23.333333333em;
+	top: 23.333333333em;
+	background: rgba(256, 256, 256, 0.5);
+}
+.sesti {
+	left: 46.666666667em;
+	top: 23.333333333em;
+	background: rgba(254, 0, 0, 0.5);
+}
+.sedmi {
+	top: 46.666666667em;
+	background: rgba(256, 256, 256, 0.5);
+}
+.osmi {
+	left: 23.333333333em;
+	top: 46.666666667em;
+	background: rgba(254, 0, 0, 0.5);
+}
+.deveti {
+	left: 46.666666667em;
+	top: 46.666666667em;
+	background: rgba(256, 256, 256, 0.5);
+}
 [class^=peice] label {
 	display: block;
 	width: 16.5em;
@@ -108,6 +159,7 @@ a:hover {
 	background: #787879;
 	cursor: pointer;
 	cursor: hand;
+	outline: .2em solid #111;
 }
 [class^=peice] label:hover {
 	background: #e61c41;
